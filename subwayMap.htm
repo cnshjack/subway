@@ -1,0 +1,110 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Subway Map</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="jquery.subwayMap-0.5.0.js"></script>
+    <style type="text/css">
+    body
+    {
+        font-family: Verdana;
+        font-size: 6pt;
+    }
+
+    /* The main DIV for the map */
+    .subway-map
+    {
+        margin: 0;
+        width: 500px;
+        height:410px;
+        background-color: white;
+    }
+
+    /* Text labels */
+    .text
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    #legend
+    {
+        float: left;
+        width: 250px;
+        height:400px;
+    }
+
+    #legend div
+    {
+        height: 25px;
+    }
+
+    #legend span
+    {
+        margin: 5px 5px 5px 0;
+    }
+    .subway-map span
+    {
+        margin: 5px 5px 5px 0;
+    }
+ 
+    </style>
+</head>
+<body>
+    <div class="subway-map" data-columns="30" data-rows="30" data-cellSize="40" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="7">
+        <ul data-color="#ff4db2" data-label="6 (Brylaine)" data-shiftCoords="0,1">          
+			<li data-coords="12,10" data-marker="interchange" data-labelPos="E"> </li>
+			<li data-coords="12,11.5">Thornton</li>
+			<li data-coords="12,12"></li>
+			<li data-coords="11,13" data-dir="S">Roughton</li>
+			<li data-coords="6,13"></li>
+			<li data-coords="5,12" data-dir="W" data-marker="interchange" data-labelPos="W">Woodhall Spa</li>
+			<li data-coords="6,11"></li>
+			<li data-coords="7,11">Tattershall\nThorpe</li>
+			<li data-coords="9,11"></li>
+			<li data-coords="11,13"></li>
+			<li data-coords="12,12" data-dir="E"></li>
+			<li data-coords="12,10"></li>
+			<li data-coords="13,11" data-marker="@station" data-labelPos="E">Scrivelsby</li>
+			<li data-coords="14,12"></li>
+			<li data-coords="13.6,12" data-marker="@station" data-labelPos="E">Wood Enderby</li>
+			<li data-coords="13.15,12"></li>
+			<li data-coords="14.15,13" data-marker="@station" data-labelPos="E">Mareham le Fen</li>
+			<li data-coords="15.15,14">Revesby\nRed Lion</li>
+			<li data-coords="16.15,14">Revesby\nGreens\nBuilders</li>
+			<li data-coords="17.15,14" data-labelPos="N">New Bolingbroke</li>
+			<li data-coords="18.15,14">Carrington</li>
+			<li data-coords="19.15,14" data-labelPos="N">Frithville</li>
+			<li data-coords="20.15,14" data-marker="interchange">Cowbridge</li>
+			<li data-coords="21.15,14" data-labelPos="N">Boston Rawsons Lane</li>
+			<li data-coords="22.15,14">Boston\nJohn\nAdams Way</li>
+			<li data-coords="23.15,14" data-marker="interchange" data-labelPos="E">Boston\nBus\nStation</li>
+        </ul>
+
+		<ul data-color="#002ff4" data-label="65/65A" data-shiftCoords="0,1">          
+			<li data-coords="12,10"></li>
+			<li data-coords="11,11" data-marker="@station"  data-labelPos="W">Horncastle\nTennyson\nGardens</li>
+			<li data-coords="10,12"></li>
+			<li data-coords="9,12" data-marker="interchange" data-markerInfo="v6">Kirkby\non Bain</li>
+			<li data-coords="8,12" data-marker="interchange" data-markerInfo="v6">Coningsby</li>
+			<li data-coords="6,12" data-marker="interchange" data-markerInfo="v6">Tattershall</li>
+			<li data-coords="5,12"></li>
+			<li data-coords="4,13" data-dir="W" data-labelPos="W">Kirkstead\nBridge</li>
+			<li data-coords="5,14" data-dir="S">Martin</li>
+			<li data-coords="6,14">Timberland</li>
+			<li data-coords="7,14">Walcott</li>
+			<li data-coords="8,14">Billinghay</li>
+			<li data-coords="9,14">North\nKyme</li>
+			<li data-coords="10,14">Anwick</li>
+			<li data-coords="11,15" data-marker="@station" data-labelPos="E">Sleaford Eastgate</li>
+			<li data-coords="12,16" data-marker="interchange" data-labelPos="E">Sleaford\nRailway\nStation</li>
+        </ul>
+		
+    </div>
+    <div id="legend"></div>
+    
+
+    <script type="text/javascript">
+        $(".subway-map").subwayMap({ debug: true });
+    </script>
+</body>
+</html>
