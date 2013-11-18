@@ -1,0 +1,91 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Horncastle buses</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="jquery.subwayMap-0.5.0.js"></script>
+    <style type="text/css">
+    body
+    {
+        font-family: Verdana;
+        font-size: 6pt;
+    }
+
+    /* The main DIV for the map */
+    .subway-map
+    {
+        margin: 0;
+        width: 500px;
+        height:410px;
+        background-color: white;
+    }
+
+    /* Text labels */
+    .text
+    {
+        text-decoration: none;
+        color: black;
+    }
+    
+    #legend
+    {
+        float: left;
+        width: 250px;
+        height:400px;
+    }
+
+    #legend div
+    {
+        height: 25px;
+    }
+
+    #legend span
+    {
+        margin: 5px 5px 5px 0;
+    }
+    .subway-map span
+    {
+        margin: 5px 5px 5px 0;
+    }
+ 
+    </style>
+</head>
+<body>
+    <div class="subway-map" data-columns="34" data-rows="34" data-cellSize="45" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="6">
+							
+							<ul data-color="#FFCC00" data-label="InterConnect 6" data-shiftCoords="0,0">
+												<li data-coords="3.5,10"></li>							
+												<li data-coords="3.4,10.07" data-marker="@interchange" data-labelPos="W">LINCOLN CITY\nBUS STATION</li>							
+												<li data-coords="4.5,10"></li>							
+												<li data-coords="5.5,9" data-marker="@interchange" data-labelPos="E">Lincoln County\nHospital</li>							
+												<li data-coords="6.5,8"></li>							
+												<li data-coords="7.2,8">Sudbrooke</li>							
+												<li data-coords="8.6,8">Langworth</li>							
+												<li data-coords="10,8" data-marker="interchange">Wragby</li>							
+												<li data-coords="11.4,8">Langton</li>							
+												<li data-coords="12.8,8">Hatton</li>							
+												<li data-coords="13,8"></li>							
+												<li data-coords="14,9" data-marker="@station" data-labelPos="W">Baumber</li>									
+												<li data-coords="15,10"></li>							
+												<li data-coords="15,10.13"></li>							
+												<li data-coords="15,10.3" data-marker="@interchange" data-markerInfo="v3">\nHORNCASTLE\nMARKET PLACE\nINTERCHANGE</li>							
+												<li data-coords="16.5,10.13" data-labelPos="N">High Toynton</li>							
+												<li data-coords="17.5,10.13">Hagworthingham</li>							
+												<li data-coords="18.5,10.13" data-marker="@station" data-labelPos="N">Raithby</li>							
+												<li data-coords="19.5,10.13" data-marker="interchange">SPILSBY\nINTERCHANGE</li>							
+												<li data-coords="20.5,10.13" data-marker="@station" data-labelPos="N">Partney</li>							
+												<li data-coords="21.5,10.13">Candlesby</li>							
+												<li data-coords="22.5,11.13" data-marker="@station" data-labelPos="W">Burgh\nle Marsh</li>							
+												<li data-coords="23.5,12.13"></li>							
+												<li data-coords="24.5,12.13">South View\nPark</li>							
+												<li data-coords="26,12.13" data-marker="interchange">SKEGNESS\nINTERCHANGE</li>							
+							</ul>
+
+    </div>
+<!--				<div id="legend"></div> -->
+    
+
+    <script type="text/javascript">
+        $(".subway-map").subwayMap({ debug: true });
+    </script>
+</body>
+</html>
